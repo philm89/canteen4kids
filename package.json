@@ -1,0 +1,20 @@
+{
+  "name": "canteen4kids-macair",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/philm89/canteen4kids.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philm89/canteen4kids/issues"
+  },
+  "homepage": "https://github.com/philm89/canteen4kids#readme"
+}

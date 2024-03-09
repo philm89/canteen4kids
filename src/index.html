@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <link href="./output.css" rel="stylesheet">
+    <title>Canteen 4 Kids</title>
+</head>
+<body class="overflow-y-auto h-screen max-h-screen"> 
+    <header class="flex justify-between">
+        <h1 class="flex px-8 justify-start mt-2 items-center h-14 bg-white font-bold text-2xl">Vendor List</h1>
+        <a 
+            hx-get="account-topup"
+            hx-trigger="click"
+            class="flex px-4 mr-4 py-2 mt-2 justify-end items-center border border-slate-700 rounded-lg"    
+            >Balance: ฿1,000</a>
+    </header>
+    <div
+        hx-get="vendorList"
+        hx-trigger="load"
+        id="student-main-view"
+        class=" bg-white mx-2 mt-2 mb-4 px-4 py-2"
+    >
+    </div>
+</body>
+<footer class="block fixed inset-x-0 bottom-0 w-full bg-lime-500 z-10 py-4">
+    <div class="flex justify-around">
+        <button>
+            <i data-lucide="home" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class=""></i>
+        </button>
+        <button>
+            <i data-lucide="align-vertical-space-around" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class=""></i>
+        </button>
+        <button>
+            <i data-lucide="square-user-round" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="" class=""></i>
+        </button>
+    </div>
+        <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</footer>
+</html>
